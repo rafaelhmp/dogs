@@ -8,12 +8,12 @@ import Login from './Components/Login/Login';
 
 function App() {
   return (
-    <div>
+    <div className={styles}>
       <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login/*" element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>
